@@ -1,0 +1,124 @@
+html 
+  head 
+    title Airconditioner
+    style. 
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-family: Dank Mono;
+        margin:20px;
+        text-align: left;
+        //- color: green;
+        font-size: 30px;
+      }
+      div{
+        font-size: 20px;
+      }
+      body{
+        background-position: center;
+        background-height: 100px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .navbar{
+        gap: 20px;
+        margin-left: 15%;
+      }
+      a{  
+        padding: 5px;
+        margin: 15px 0 15px 10px;
+        color: white;
+        text-decoration: none;
+      }
+      .navbarsec{
+        position  : sticky;
+        width: 130%;
+        height:35px;
+        align-items: right;
+        padding: 0 0 0 10%;
+        display:flex;
+        opacity: 0.8;
+        background-color: navy;
+        padding:15px;
+      }
+      img {
+          margin:20px;
+          width:250px;
+          height:300px;
+      }
+      .flexdiv{
+        display:flex;
+      }
+      .imgcontainer{
+        display:flex;
+      }
+      .imgcontainerchild{
+        border : 2px solid grey;
+        width:350px;
+        margin:20px;
+        text-align : center;
+      }
+      .home{
+        font-size:40px;
+        padding: 5px;
+      }
+      footer {
+        margin: 20px;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+      }
+  body 
+    section.navbarsec
+      p.title 
+        a.home(href = '/') Electronics
+      div.navbar
+        a(href='/refrigerator') Refrigerator
+        a(href='/washingmachine') Washingmachine
+        a(href='/airconditioner' autofocus) Airconditioner
+        a(href='/television') Television
+    h1 Airconditioner 
+    section.flexdiv
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://th.bing.com/th/id/R.93705328ec38cf28563d6d1285ab865e?rik=l0hR%2fRdYS8fLTw&riu=http%3a%2f%2fimages.samsung.com%2fis%2fimage%2fsamsung%2fae_AS24UUPXSG_002_Right-Angle%3f%24TM-Gallery%24&ehk=DUrlQhHeJaT1jW4%2fBRoQsHZp%2fyDo32IGWtDJgi4sJ8w%3d&risl=1&pid=ImgRaw&r=0')
+                  h2 samsung
+                  br
+                  span MRP: ₹ 45,000
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://i5.walmartimages.com/asr/8303c112-14de-41dc-90a9-b86d973c3df2.c6c49aca9ef156dec3634e7b2a90d964.jpeg')
+                  h2 Daikin
+                  br
+                  span MRP :₹ 35,000 
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://1.bp.blogspot.com/-8OVp9ruzIMc/XsJ8Ncu7ybI/AAAAAAAAbj4/552nbfCgebcIT0ufOifbyx8fK0IUzDX9ACLcBGAsYHQ/s1600/61ffd7-X9QL._SL1500_.jpg')
+                  h2 Blue Star
+                  br
+                  span MRP :₹ 40,000
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://th.bing.com/th/id/OIP.AD5cKvLafD-eFAEH5RiKxQHaHa?pid=ImgDet&rs=1')
+                  h2 lloyd
+                  br
+                  span MRP :₹ 45,000
+          //- div.imgcontainer
+          //-     div.imgcontainerchild
+          //-         img(src=airconditionerdata[2].image)
+          //-         h2 #{airconditionerdata[2].name}
+          //-         p #{airconditionerdata[2].description}                
+          //-         br
+          //-         span MRP :₹ #{airconditionerdata[2].price} 
+          //- div.imgcontainer
+              div.imgcontainerchild
+                  img(src=airconditionerdata[3].image)
+                  h2 #{airconditionerdata[3].name}
+                  p #{airconditionerdata[3].description}                
+                  br
+                  span MRP :₹ #{airconditionerdata[3].price} 
+    footer Copyright © 2023 Electronics
+      a.foot(href = 'https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsmHbFRVpxcNKkwxMsCQmwNkwBcJrGkTmRslBHdHnDHCBjTFTMjNTscMZzTtKCtzCkxFQwMl') Contact: +15856380143 
+      a.foot(href = '/about') About

@@ -1,0 +1,132 @@
+html 
+  head 
+    title Washingmachine
+    style. 
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-family: Dank Mono;
+        margin:20px;
+        text-align: left;
+        //- color: green;
+        font-size: 30px;
+      }
+      div{
+        font-size: 20px;
+      }
+      body{
+        background-position: center;
+        background-height: 100px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .navbar{
+        gap: 20px;
+        margin-left: 15%;
+      }
+      a{  
+        padding: 5px;
+        margin: 15px 0 15px 10px;
+        color: white;
+        text-decoration: none;
+      }
+      .navbarsec{
+        position  : sticky;
+        width: 130%;
+        height:35px;
+        align-items: right;
+        padding: 0 0 0 10%;
+        display:flex;
+        opacity: 0.8;
+        background-color: navy;
+        padding:15px;
+      }
+      img {
+          margin:20px;
+          width:250px;
+          height:300px;
+      }
+      .flexdiv{
+        display:flex;
+      }
+      .imgcontainer{
+        display:flex;
+      }
+      .imgcontainerchild{
+        border : 2px solid grey;
+        width:350px;
+        margin:20px;
+        text-align : center;
+      }
+      .home{
+        font-size:40px;
+        padding: 5px;
+      }
+      footer {
+        margin: 20px;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+      }
+  body 
+    section.navbarsec
+      p.title 
+        a.home(href = '/') Electronics
+      div.navbar
+        a(href='/refrigerator') Refrigerator
+        a(href='/washingmachine' autofocus) Washingmachine
+        a(href='/airconditioner') Airconditioner
+        a(href='/television') Television
+    h1 Washingmachine
+    section.flexdiv
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://th.bing.com/th/id/R.75a03b5a7e1432be49b48c5d7d69f7d0?rik=ICBPPU5heqVyMA&riu=http%3a%2f%2fnewsroom.electrolux.com%2fus%2ffiles%2f2016%2f01%2fElectrolux-Perfect-Steam%e2%84%a2-Washer-with-LuxCare%e2%84%a2-Wash-and-SmartBoost%e2%84%a2-1600x1950.jpg&ehk=BpAdEmmr2SZi3e7csFzSmHhDSdU7whobZgLNvyk8Rcc%3d&risl=&pid=ImgRaw&r=0')
+                  h2 samsung       
+                  br
+                  span MRP :₹ 36,000
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://applianceswarehouse.com.au/wp-content/uploads/2020/07/LG-WTG9532VH-9.5kg-Top-Load-Washing-Machine-Close-up-high-768x642.jpeg')
+                  h2 LG      
+                  br
+                  span MRP :₹ 29,999
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://th.bing.com/th/id/R.a4f3f1af3aab34dbe4e882e82db81c9c?rik=0EQT8l6cdjmYWg&riu=http%3a%2f%2fmobileimages.lowes.com%2fproductimages%2ffdca4ce5-7781-4d42-8ed1-f6cc61583f8f%2f02982217.jpg%3fsize%3dpdhi&ehk=8E4QCn4KiJ9PGPpkGRwqkIGeRi6795W2z1H%2fSN30UW4%3d&risl=&pid=ImgRaw&r=0')
+                  h2 IFB    
+                  br
+                  span MRP :₹ 25,000
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://th.bing.com/th/id/OIP.xYJ4j-cXdwp7lU6yRiabYgHaHa?pid=ImgDet&rs=1')
+                  h2 Hitachi    
+                  br
+                  span MRP :₹ 40,000
+          
+          //- div.imgcontainer
+          //-     div.imgcontainerchild
+          //-         img(src=washingmachinedata[1].image)
+          //-         h2 #{washingmachinedata[1].name}
+          //-         p #{washingmachinedata[1].description}                
+          //-         br
+          //-         span MRP :₹ #{washingmachinedata[1].price} 
+          //- div.imgcontainer
+          //-     div.imgcontainerchild
+          //-         img(src=washingmachinedata[2].image)
+          //-         h2 #{washingmachinedata[2].name}
+          //-         p #{washingmachinedata[2].description}                
+          //-         br
+          //-         span MRP :₹ #{washingmachinedata[2].price} 
+          //- div.imgcontainer
+          //-     div.imgcontainerchild
+          //-         img(src=washingmachinedata[3].image)
+          //-         h2 #{washingmachinedata[3].name}
+          //-         p #{washingmachinedata[3].description}                
+          //-         br
+          //-         span MRP :₹ #{washingmachinedata[3].price} 
+    footer Copyright © 2023 Electronics 
+      a.foot(href = 'https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsmHbFRVpxcNKkwxMsCQmwNkwBcJrGkTmRslBHdHnDHCBjTFTMjNTscMZzTtKCtzCkxFQwMl') Contact: +15856380143 
+      a.foot(href = '/about') About

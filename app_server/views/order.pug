@@ -1,0 +1,44 @@
+h1 #{appliances}
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Electronics Page</title>
+</head>
+<body>
+    <h1>order page</h1>
+
+    <form action="/success">
+        <label for="customer_name">Customer Name:</label>
+    
+        <input type="text" id="customer_name"  name="customer_name" required><br><br>
+
+        <label for="customer_email">Email Address:</label>
+    
+        <input type="email" id="customer_email"  name="customer_email" required><br><br>
+
+        <label for="shipping_address">Shipping Address:</label>
+        <textarea id="shipping_address" name="shipping_address" rows="4" cols="50" required></textarea><br><br>
+    </form>
+        <h2>Order Details</h2>
+
+        <!-- Product 1 -->
+        <label for="">Product 1 Name:</label>
+        <input type="text" id="product1_name"   name="product1_name" required><br>
+
+        <label for="product1_quantity">Quantity:</label>
+        <input type="number" id="product1_quantity" name="product1_quantity" required><br><br>
+
+        <!-- Product 2 (You can repeat this section for more products) -->
+        <label for="product2_name">Product 2 Name:</label>
+        <input type="text" id="product2_name" name="product2_name"><br>
+
+        <label for="product2_quantity">Quantity:</label>
+        <input type="number" id="product2_quantity" name="product2_quantity"><br><br>
+
+        <!-- Add more products as needed -->
+
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+</html>
+   

@@ -1,0 +1,142 @@
+html 
+  head 
+    title Refrigerator
+    style. 
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-family: Dank Mono;
+        margin:20px;
+        text-align: left;
+        //- color: green;
+        font-size: 30px;
+      }
+      div{
+        font-size: 20px;
+      }
+      body{
+        background-position: center;
+        background-height: 100px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .navbar{
+        gap: 20px;
+        margin-left: 15%;
+      }
+      a{  
+        padding: 5px;
+        margin: 15px 0 15px 10px;
+        color: white;
+        text-decoration: none;
+      }
+      .navbarsec{
+        position  : sticky;
+        width: 130%;
+        height:35px;
+        align-items: right;
+        padding: 0 0 0 10%;
+        display:flex;
+        opacity: 0.8;
+        background-color: navy;
+        padding:15px;
+      }
+      img {
+          margin:20px;
+          width:250px;
+          height:300px;
+      }
+      .flexdiv{
+        display:flex;
+      }
+      .imgcontainer{
+        display:flex;
+      }
+      .imgcontainerchild{
+        border : 2px solid grey;
+        width:350px;
+        margin:20px;
+        text-align : center;
+      }
+      .home{
+        font-size:40px;
+        padding: 5px;
+      }
+      footer {
+        margin: 20px;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+      }
+  body 
+    section.navbarsec
+      p.title 
+        a.home(href = '/') Electronics
+      div.navbar
+        a(href='/refrigerator' autofocus) Refrigerator
+        a(href='/washingmachine') Washingmachine
+        a(href='/airconditioner') Airconditioner
+        a(href='/television') Television
+    h1 Refrigerator
+    section.flexdiv
+          div.imgcontainer
+              div.imgcontainerchild
+                  a(href='/order')
+                    img(src='https://th.bing.com/th/id/OIP.mKmppE0bON6Rdkp-TY67rQHaLD?pid=ImgDet&rs=1')
+                  h2 samsung
+                  br
+                  span MRP :₹ 38,000
+          div.imgcontainer
+              div.imgcontainerchild
+                  a(href='/order')
+                    img(src='https://th.bing.com/th/id/OIP.vbXtpCrIsoEyi9FNx1wcGAHaMw?pid=ImgDet&rs=1')
+                  h2 LG
+                  br
+                  span MRP :₹ 80,000
+          div.imgcontainer
+              div.imgcontainerchild
+                a(href='/order')
+                  img(src='https://i5.walmartimages.com/asr/80fe3fdf-ac04-412a-a04e-82dae88c37b2_1.456bc5614399e0e8f58b2af02e6fc347.jpeg')
+                h2 Whirlpool
+                br
+                span MRP :₹ 22,000
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://i5.walmartimages.com/asr/c4165603-3fb4-4fb0-8862-14e12321e358_2.d421bff735bfa894c5c22a62e01d4f1c.jpeg')
+                  h2 haier
+                  br
+                  span MRP :₹ 22,000
+          
+    //-      div.imgcontainer
+              div.imgcontainerchild
+                  img(src=refrigeratordata[1].image)
+                  h2 #{refrigeratordata[1].name}
+                  p #{refrigeratordata[1].description}                
+                  br
+                  span MRP :₹ #{refrigeratordata[1].price}
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src=refrigeratordata[2].image)
+                  h2 #{refrigeratordata[2].name}
+                  p #{refrigeratordata[2].description}                
+                  br
+                  span MRP :₹ #{refrigeratordata[2].price} 
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src=refrigeratordata[3].image)
+                  h2 #{refrigeratorata[3].name}
+                  p #{refrigeratordata[3].description}                
+                  br
+                  span MRP :₹ #{refrigeratordata[3].price} 
+    //-       div.imgcontainer
+    //-           div.imgcontainerchild
+    //-               img(src=personalsdata[4].image)
+    //-               h2 #{personalsdata[4].name}
+    //-               p #{personalsdata[4].description}                
+    //-               br
+    //-               span MRP :#{personalsdata[3].price} ₹
+    footer Copyright © 2023 Electronics 
+      a.foot(href = 'https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsmHbFRVpxcNKkwxMsCQmwNkwBcJrGkTmRslBHdHnDHCBjTFTMjNTscMZzTtKCtzCkxFQwMl') Contact: +15856380143 
+      a.foot(href = '/about') About

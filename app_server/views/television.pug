@@ -1,0 +1,132 @@
+html 
+  head 
+    title Television
+    style. 
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-family: Dank Mono;
+        margin:20px;
+        text-align: left;
+        //- color: green;
+        font-size: 30px;
+      }
+      div{
+        font-size: 20px;
+      }
+      body{
+        background-position: center;
+        background-height: 100px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .navbar{
+        gap: 20px;
+        margin-left: 15%;
+      }
+      a{  
+        padding: 5px;
+        margin: 15px 0 15px 10px;
+        color: white;
+        text-decoration: none;
+      }
+      .navbarsec{
+        position  : sticky;
+        width: 130%;
+        height:35px;
+        align-items: right;
+        padding: 0 0 0 10%;
+        display:flex;
+        opacity: 0.8;
+        background-color: navy;
+        padding:15px;
+      }
+      img {
+          margin:20px;
+          width:250px;
+          height:300px;
+      }
+      .flexdiv{
+        display:flex;
+      }
+      .imgcontainer{
+        display:flex;
+      }
+      .imgcontainerchild{
+        border : 2px solid grey;
+        width:350px;
+        margin:20px;
+        text-align : center;
+      }
+      .home{
+        font-size:40px;
+        padding: 5px;
+      }
+      footer {
+        margin: 20px;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+      }
+  body 
+    section.navbarsec
+      p.title 
+        a.home(href = '/') Electronics
+
+      div.navbar
+        a(href='/refrigerator') Refrigerator
+        a(href='/washingmachine') Washingmachine
+        a(href='/airconditioner') Airconditioner
+        a(href='/television' autofocus) Television
+    h1 Television 
+     section.flexdiv
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://m.media-amazon.com/images/I/81xT3no1+6L._SL1500_.jpg')
+                  h2 MI
+                  br
+                  span MRP :₹ 11,499
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://www.compareprix.in/images/product/large/panasonic-th-28f200dx-28-inch-hd-ready-led-television-large.jpg')
+                  h2 Panasonic
+                  br
+                  span MRP :₹ 28,000
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://th.bing.com/th/id/R.f15b3e0f4956ded8328078b59e7cc0ed?rik=yQiKhcaISOaJ9w&riu=http%3a%2f%2fimages.samsclubresources.com%2fis%2fimage%2fsamsclub%2f0005058512307_A%3f%24img_size_380x380%24&ehk=gVj49IXI94tVk0XAtsm4pC4LrkzEv8cHKqQHL7wDBx4%3d&risl=&pid=ImgRaw&r=0')
+                  h2 Hitachi
+                  br
+                  span MRP :₹ 40,000
+          div.imgcontainer
+              div.imgcontainerchild
+                  img(src='https://th.bing.com/th/id/OIP.xnepWNZeKNwYiyOtptgGdgHaE_?pid=ImgDet&rs=1')
+                  h2 sony
+                  br
+                  span MRP :₹ 55,000
+          //- div.imgcontainer
+          //-     div.imgcontainerchild
+          //-         img(src=televisiondata[1].image)
+          //-         h2 #{televisionata[1].name}
+          //-         p #{televisiondata[1].description}                
+          //-         br
+          //-         span MRP :₹ #{televisiondata[1].price} 
+          //- div.imgcontainer
+          //-     div.imgcontainerchild
+          //-         img(src=televisiondata[2].image)
+          //-         h2 #{televisiondata[2].name}
+          //-         p #{televisiondata[2].description}                
+          //-         br
+          //-         span MRP :₹ #{televisiondata[2].price} 
+          //- div.imgcontainer
+          //-     div.imgcontainerchild
+          //-         img(src=televisiondata[3].image)
+          //-         h2 #{televisiondata[3].name}
+          //-         p #{televisiondata[3].description}                
+          //-         br
+          //-         span MRP :₹ #{televisiondata[3].price} 
+    footer Copyright © 2023 Electronics
+      a.foot(href = 'https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsmHbFRVpxcNKkwxMsCQmwNkwBcJrGkTmRslBHdHnDHCBjTFTMjNTscMZzTtKCtzCkxFQwMl') Contact: +15856380143 
+      a.foot(href = '/about') About
